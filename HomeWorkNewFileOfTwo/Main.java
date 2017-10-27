@@ -20,8 +20,7 @@ public class Main {
 	static void findTextAddFile(String text1, String text2, String f3) {
 		String newText = "";
 		String[] t1 = text1.split("[ ,;]");
-		String[] t2 = text2.split("[ ,;]");
-		
+		String[] t2 = text2.split("[ ,;]");	
 		for (int i = 0; i < t1.length; i++) {
 			String temp = findText(t1[i], t2);
 			newText = newText + temp;
