@@ -52,7 +52,7 @@ public class FileOperation {
 		     File[] fileList = file.listFiles(mFF);		
 			return fileList;
 		} else {
-			throw new IllegalArgumentException("Выбран файл, а нужно каталог!");
+			throw new IllegalArgumentException("Р’С‹Р±СЂР°РЅ С„Р°Р№Р», Р° РЅСѓР¶РЅРѕ РєР°С‚Р°Р»РѕРі!");
 		}
 	}
 }
