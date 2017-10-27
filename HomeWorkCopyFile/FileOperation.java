@@ -16,8 +16,7 @@ public class FileOperation {
 			String nameFileOne = folderSource + "/" + listSource[i].getName();
 			String nameFileTwo = folderRecipient + "/" + listSource[i].getName();
 			File fileOne = new File(nameFileOne);
-			File fileTwo = new File(nameFileTwo);
-			
+			File fileTwo = new File(nameFileTwo);			
 			copyFile(fileOne, fileTwo);
 		}	
 	}
