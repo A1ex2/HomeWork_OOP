@@ -8,8 +8,8 @@ public class Main {
 		String f2 = "b.txt";
 		String f3 = "c.txt";
 
-		FileOperation.newFile("ïåðâûé ïðîñòî òåêñò êàêîé òî", f1);
-		FileOperation.newFile("åùå êàêîé òî òåêñò ïðîñòî òåñò", f2);
+		FileOperation.newFile("первый просто текст какой то", f1);
+		FileOperation.newFile("еще какой то текст просто тест", f2);
 
 		String text1 = FileOperation.readerFile(f1);
 		String text2 = FileOperation.readerFile(f2);
@@ -39,4 +39,4 @@ public class Main {
 		}		
 		return temp;
 	}
-} 
+}
