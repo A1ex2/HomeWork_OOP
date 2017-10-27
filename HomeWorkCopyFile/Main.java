@@ -5,11 +5,11 @@ import javax.swing.JOptionPane;
 public class Main {
 
 	public static void main(String[] args) {
-		String folderSource = enterAddress("источник");
+		String folderSource = enterAddress("РёСЃС‚РѕС‡РЅРёРє");
 		if (!(FileOperation.existsFile(folderSource))) {
 			return;
 		}
-		String folderRecipient = enterAddress("приемник");
+		String folderRecipient = enterAddress("РїСЂРёРµРјРЅРёРє");
 		if (!(FileOperation.existsFile(folderRecipient))) {
 			return;
 		}
@@ -17,14 +17,14 @@ public class Main {
 
 		try {
 			FileOperation.copyFiles(folderSource, folderRecipient, expansion);
-			JOptionPane.showMessageDialog(null, "Файлы скопированы");
+			JOptionPane.showMessageDialog(null, "Р¤Р°Р№Р»С‹ СЃРєРѕРїРёСЂРѕРІР°РЅС‹");
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 	}
 
 	static String enterAddress(String type) {
-		String address = String.valueOf(JOptionPane.showInputDialog("Введите каталог " + type));
+		String address = String.valueOf(JOptionPane.showInputDialog("Р’РІРµРґРёС‚Рµ РєР°С‚Р°Р»РѕРі " + type));
 		return address;
 	}
 }
