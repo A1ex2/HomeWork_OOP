@@ -46,4 +46,4 @@ public class Main {
 	static void outList(List<Integer> listTest) {
 		System.out.println(listTest);
 	}
-}
+} 
